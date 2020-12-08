@@ -1,6 +1,5 @@
 # Table of content
 
-
 * [第一章 八大排序算法](chapter1.md)
   * [1 冒泡排序](chapter1/01-BubbleSort.md)
   * [2 选择排序](chapter1/02-SelectionSort.md)
