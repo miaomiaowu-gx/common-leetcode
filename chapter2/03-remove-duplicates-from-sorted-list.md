@@ -18,7 +18,7 @@
 ```
 
 
-[题目83链接](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+[题目 83 链接](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 
 ### 实现 1
 
