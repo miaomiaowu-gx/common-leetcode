@@ -27,3 +27,9 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 
 
 [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+
+
+### 题解
+
+
+
