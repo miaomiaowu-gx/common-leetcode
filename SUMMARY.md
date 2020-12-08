@@ -17,6 +17,7 @@
   * [5 删除链表中的节点](chapter2/05-delete-node-in-a-linked-list.md)
   * [6 链表的中间结点](chapter2/06-middle-of-the-linked-list.md)
   * [7 删除中间节点](chapter2/07-delete-middle-node-lcci.md)
+  * [8 链表中倒数第k个节点](chapter2/08-.md)
 * [第三章 堆栈](chapter3.md)
 * [第四章 二叉树](chapter4.md)
 * [第五章 图](chapter5.md)
