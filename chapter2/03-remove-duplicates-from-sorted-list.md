@@ -20,10 +20,9 @@
 
 [题目链接](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 
-### 实现1
+### 实现 1
 
 思路：当前元素与下一个元素相等，则删除当前元素。
-
 
 缺点：不需要那么多指针！
 
@@ -49,7 +48,7 @@ class Solution {
 ```
 
 
-### 实现2
+### 实现 2 🍒
 
 思路：当前元素与下一个元素相等，则删除下一个元素。
 
