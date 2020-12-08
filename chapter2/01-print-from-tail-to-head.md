@@ -49,7 +49,16 @@ class Solution {
 
 思路：利用递归，先走至链表末端，回溯时依次将节点值加入列表 ，这样就可以实现链表值的倒序输出。
 
+参考使用递归逆序打印一个链表：
 
+```java
+public void reversePrint(ListNode head) {
+    if (head == null)
+        return;
+    reversePrint(head.next);
+    System.out.println(head.val);
+}
+```
 
 
 #### 3）反转链表🍒
