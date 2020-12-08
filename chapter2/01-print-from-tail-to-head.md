@@ -55,7 +55,9 @@ class Solution {
 public void reversePrint(ListNode head) {
     if (head == null)
         return;
+    //先逆序打印后部分链表    
     reversePrint(head.next);
+    //再打印当前
     System.out.println(head.val);
 }
 ```
