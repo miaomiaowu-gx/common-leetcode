@@ -16,4 +16,24 @@
 
 ### 
 
-思路：头节点有可能被删除
+思路：头节点有可能被删除，要建立头头节点；删除当前节点需要一直前一个节点，建立节点 pre 记录前一个节点。
+
+```java
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
+        ListNode pre = newHead;
+        ListNode curr = head;
+        while (curr!=null){
+            if(curr.val == val){
+                pre.next = curr.next;
+            }else{
+                pre = curr;
+            }
+            curr = curr.next;
+        }
+        return newHead.next;
+    }
+}
+```
