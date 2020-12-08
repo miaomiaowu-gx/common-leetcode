@@ -22,7 +22,28 @@
 
 ### 实现1
 
+缺点：不需要那么多指针！
 
+
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
+        ListNode pre = newHead;
+
+        while(head != null && head.next != null){
+            if(head.val == head.next.val){
+                pre.next = head.next;
+            }else{
+                pre = head;
+            }
+            head = head.next;
+        }
+        return newHead.next;
+    }
+}
+```
 
 
 ### 实现2
