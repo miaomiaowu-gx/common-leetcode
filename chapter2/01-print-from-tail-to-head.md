@@ -62,7 +62,28 @@ public void reversePrint(ListNode head) {
 }
 ```
 
+代码如下：
 
+```java
+class Solution {
+    public int[] reversePrint(ListNode head) {
+        ArrayList<Integer> ls = new ArrayList<Integer>();
+        reversePrintCore(head, ls);
+        int size = ls.size();
+        int[] res = new int[size];
+        for(int i=0; i<size; i++){
+            res[i] = ls.get(i);
+        }
+        return res;
+    }
+
+    public void reversePrintCore(ListNode cur, ArrayList<Integer> ls){
+        if(cur == null) return;
+        reversePrintCore(cur.next, ls);
+        ls.add(cur.val);
+    }
+}
+```
 
 
 
