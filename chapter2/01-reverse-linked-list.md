@@ -60,7 +60,17 @@ class Solution {
 要小心的是 n_{1} 的下一个必须指向 ∅ 。如果你忽略了这一点，链表中可能会产生循环。如果使用大小为 2 的链表测试代码，则可能会捕获此错误。
 
 ```java
-
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if(head == null || head.next == null)
+            return head;
+        ListNode newHead = reverseList( head.next );
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+}
+```
 
 
 
