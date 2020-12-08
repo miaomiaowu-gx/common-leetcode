@@ -48,7 +48,24 @@ class Solution {
 
 ### 实现2
 
+思路：当前元素与下一个元素相等，则删除下一个元素。
 
+
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode current = head;
+        while (current != null && current.next != null) {
+            if (current.next.val == current.val) {
+                current.next = current.next.next;
+            } else {
+                current = current.next;
+            }
+        }
+        return head;
+    }
+}
+```
 
 
 复杂度分析
