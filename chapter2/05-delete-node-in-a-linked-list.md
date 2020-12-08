@@ -27,7 +27,14 @@
 
 思路：与下一个节点交换。删除下一个节点，并将下一个节点的值赋给当前节点！
 
-
+```java
+class Solution {
+    public void deleteNode(ListNode node) {
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+}
+```
 
 
 
