@@ -10,6 +10,7 @@
   * [7 基数排序](chapter1/07-BucketSort.md)
   * [8 希尔排序](chapter1/08-ShellSort.md)
 * [第二章 链表](chapter2.md)
+  * [1 从尾到头打印链表](chapter2/01-print-from-tail-to-head.md)
 * [第三章 堆栈](chapter3.md)
 * [第四章 二叉树](chapter4.md)
 * [第五章 图](chapter5.md)
