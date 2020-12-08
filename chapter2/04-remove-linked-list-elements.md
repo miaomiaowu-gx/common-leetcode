@@ -14,7 +14,7 @@
 [题目 203 链接](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 
 
-### 
+### 题解
 
 思路：头节点有可能被删除，要建立头头节点；删除当前节点需要一直前一个节点，建立节点 pre 记录前一个节点。
 
