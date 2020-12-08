@@ -20,8 +20,23 @@
 思路：把链表的节点全部压栈，因为栈是先进后出的一种数据结构，全部压栈之后再一个个出栈。即实现倒叙！
 
 ```java
-
-
+class Solution {
+    public int[] reversePrint(ListNode head) {
+        Stack<ListNode> stack = new Stack<ListNode>();
+        ListNode temp = head;
+        while (temp != null) {
+            stack.push(temp);
+            temp = temp.next;
+        }
+        int size = stack.size();
+        int[] print = new int[size];
+        for (int i = 0; i < size; i++) {
+            print[i] = stack.pop().val;
+        }
+        return print;
+    }
+}
+```
 
 
 #### 2）递归
