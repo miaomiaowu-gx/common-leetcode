@@ -96,7 +96,36 @@ class Solution {
 #### 3）反转链表后打印 🍒
 
 
+```java
+class Solution {
+    public int[] reversePrint(ListNode head) {
+        ListNode pre = null;
+        ListNode curr = head;
+        int size = 0;
+        while(curr!=null){
+            ListNode t = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = t;
+            size++;
+        }
 
+        int[] res = new int[size];
+        int index = 0;
+        curr = pre;
+        pre = null;
+        while(curr!=null){
+            res[index++]= curr.val;
+            //可以修改链表，则此部分可以不加
+            ListNode t = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = t;
+        }
+        return res;
+    }
+}
+```
 
 
 
