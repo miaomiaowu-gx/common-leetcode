@@ -19,5 +19,15 @@
 [234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
 
+### 方法一：将值复制到数组中后用双指针法
+
+
+
+
 ### 
+
+
+
+### 
+
 
