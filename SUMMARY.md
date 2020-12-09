@@ -13,7 +13,7 @@
   * [1 反转链表](chapter2/01-reverse-linked-list.md)
   * [2 从尾到头打印链表](chapter2/02-print-from-tail-to-head.md)
   * [3 删除排序链表中的重复元素](chapter2/03-remove-duplicates-from-sorted-list.md)
-  * [4 删除非排序链表中的重复元素](chapter2/03-2-remove-duplicate-node-lcci.md)
+  * [4 删除非排序链表中的重复元素](chapter2/04-remove-duplicate-node-lcci.md)
   * [5 移除值为 val 的链表元素](chapter2/04-remove-linked-list-elements.md)
   * [6 删除链表中的节点](chapter2/05-delete-node-in-a-linked-list.md)
   * [7 链表的中间结点](chapter2/06-middle-of-the-linked-list.md)
