@@ -14,3 +14,29 @@
 
 ### 快慢指针
 
+快慢指针相遇，则有环。
+
+确定环的位置，让其中一个指针从头节点开始，另一个指针从相遇节点开始，两者同时开始移动。
+
+
+```java
+public class Solution {
+    public ListNode detectCycle(ListNode head) {
+        ListNode two = head, one = head;
+        while (two!=null && two.next!=null){
+            two = two.next.next;
+            one = one.next;
+            if(two == one){
+                //有环
+                one = head;
+                while(one != two){
+                    one = one.next;
+                    two = two.next;
+                }
+                return one;
+            }
+        }
+        return null;
+    }
+}
+```
