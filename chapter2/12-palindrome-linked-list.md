@@ -109,10 +109,58 @@ class Solution {
 5. 返回结果。
 
 
+```java
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        if(head==null) return true;
+
+        // 找到前半部分链表的尾节点并反转后半部分链表
+        ListNode mid = endOfFirstHalf(head);
+        ListNode bhead = reverseList(mid.next);
+
+        // 判断是否回文
+        ListNode p1 = head;
+        ListNode p2 = bhead;
+        boolean result = true;
+        while (result && p2!=null){ //不能用 p1！奇数时，中间的数在 p1 上
+            if(p1.val != p2.val){
+                result = false;
+            }
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        // 还原链表并返回结果
+        mid.next = reverseList(bhead);
+        return result;
+    }
+
+    private ListNode endOfFirstHalf(ListNode p){
+        ListNode fast = p, slow = p;
+        while (fast.next!=null && fast.next.next!=null){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+
+    private ListNode reverseList(ListNode p){
+        ListNode pre = null, curr = p;
+        while (curr!=null){
+            ListNode t = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = t;
+        }
+        return pre;
+    }
+}
+```
 
 
+代码细节：
 
-
+* 
 
 
 
