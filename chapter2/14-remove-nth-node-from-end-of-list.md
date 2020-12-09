@@ -30,7 +30,9 @@ class Solution {
         while (n-- >= 0 && fast!=null){
             fast = fast.next;
         }
-        while (fast!=null){
+        while (fast!=null){ 
+            //由于此处判断为 fast!=null，上一步先走了n+1步
+            //若判断为 fast!=null&&fast.next!=null，则只需走n步
             fast = fast.next;
             slow = slow.next;
         }
