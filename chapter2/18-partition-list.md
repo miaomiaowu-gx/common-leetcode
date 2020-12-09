@@ -16,4 +16,5 @@
 [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)
 
 
-### 
+### 双指针法 + 拆分
+
