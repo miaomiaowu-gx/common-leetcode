@@ -19,5 +19,31 @@
 
 ### 模拟运算过程
 
-
+```java
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head = new ListNode(-1), cur = head;
+        int flag = 0; //是否有进位
+        ListNode p1 = l1, p2 = l2;
+        while (p1!=null || p2!=null){
+            int val1 = p1==null? 0 : p1.val;
+            int val2 = p2==null? 0 : p2.val;
+            int val = val1 + val2 + flag;
+            //连接新节点，并移动到尾部
+            cur.next = new ListNode(val % 10);
+            cur = cur.next;
+            flag = val /10;
+            //遍历两个链表！
+            p1 = p1==null? null : p1.next;
+            p2 = p2==null? null : p2.next;
+        }
+        //判断最高位是否有进位！
+        if(flag!=0){
+            ListNode t = new ListNode(flag);
+            cur.next = t;
+        }
+        return head.next;
+    }
+}
+```
 
