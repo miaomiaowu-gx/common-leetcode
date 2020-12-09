@@ -59,8 +59,7 @@ class Solution {
 
 ### 方法二：递归
 
-
-
+[详解](https://leetcode-cn.com/problems/palindrome-linked-list/solution/hui-wen-lian-biao-by-leetcode-solution/)
 
 ```java
 class Solution {
