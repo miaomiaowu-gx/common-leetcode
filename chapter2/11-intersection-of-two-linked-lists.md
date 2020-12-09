@@ -12,6 +12,13 @@
 
 ### 双指针法
 
+1. 创建两个指针 pA 和 pB，分别初始化为链表 A 和 B 的头结点。然后让它们向后逐结点遍历。
+
+2. 当 pA 到达链表的尾部时，将它重定位到链表 B 的头结点 (你没看错，就是链表 B); 类似的，当 pB 到达链表的尾部时，将它重定位到链表 A 的头结点。
+
+3. 若在某一时刻 pA 和 pB 相遇，则 pA/pB 为相交结点。
+
+
 <img src="./imglinklist/02-160.png" width=700>
 
 [图片来源](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/solution/tu-jie-xiang-jiao-lian-biao-by-user7208t/)
