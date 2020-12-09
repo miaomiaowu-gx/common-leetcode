@@ -12,6 +12,8 @@
 
 ### 双指针法
 
+<img src="./imglinklist/02-160.png" width=700>
+
 
 ```java
 public class Solution {
