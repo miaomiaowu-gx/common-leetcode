@@ -23,8 +23,29 @@
 
 ### 迭代
 
+思路：建立头头节点，每次交换当前节点后的两个节点
 
 
+```java
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if(head==null){
+            return head;
+        }
+        ListNode newHead = new ListNode(-1,head), p =  newHead;
+        //每次需要交换 p 后面的两个节点
+        while (p!=null && p.next!=null && p.next.next!=null){
+            ListNode node1 = p.next;
+            ListNode node2 = p.next.next;
+            node1.next = node2.next;
+            node2.next = node1;
+            p.next = node2;
+            p = p.next.next;
+        }
+        return newHead.next;
+    }
+}
+```
 
 
 ### 递归
