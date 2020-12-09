@@ -28,7 +28,7 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
 
-### 题解
+### 双指针法
 
 <img src="./imglinklist/01-876.png" width=300>
 
@@ -45,5 +45,32 @@ class Solution {
     }
 }
 ```
+
+### 单指针法
+
+遍历两遍，第一遍统计链表节点数，第二遍由 n/2 查找中间节点
+
+```java
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        int n = 0;
+        ListNode cur = head;
+        while (cur != null) {
+            ++n;
+            cur = cur.next;
+        }
+        int k = 0;
+        cur = head;
+        while (k < n / 2) {
+            ++k;
+            cur = cur.next;
+        }
+        return cur;
+    }
+}
+```
+
+
+
 
 
