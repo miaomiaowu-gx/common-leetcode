@@ -39,11 +39,36 @@
 3. 断开环 `new_tail.next = None`，并返回新的链表头 new_head。
 
 
+```java
+class Solution {
+    public ListNode rotateRight(ListNode head, int k) {
+        if(head==null || head.next==null) return head;
+        int len = 0;
+        ListNode newHead = null, curr=head;
+        while (curr!=null && curr.next!=null){
+            len++;
+            curr = curr.next;
+        }
+        len++; //最后一个节点
+        curr.next = head; //连接成环
+        curr = head;
+        for(int i=0; i<len- k%len -1;i++){
+            curr = curr.next;
+        }
+        newHead = curr.next;
+        curr.next = null;
+        return newHead;
+    }
+}
+```
 
 
 
+复杂度分析
 
+* 时间复杂度：O(N)，其中 N 是链表中的元素个数
 
+* 空间复杂度：O(1)，因为只需要常数的空间
 
 
 
