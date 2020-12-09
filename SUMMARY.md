@@ -30,7 +30,7 @@
   * [18 分隔链表](chapter2/18-partition-list.md)
   * [19 反转链表 II](chapter2/19-reverse-linked-list-ii.md)
   * [20 有序链表转换二叉搜索树](chapter2/20-convert-sorted-list-to-binary-search-tree.md)
-  * [21 复制带随机指针的链表](chapter2/21-.md)
+  * [21 复制带随机指针的链表](chapter2/21-copy-list-with-random-pointer.md)
   * [22 重排链表](chapter2/22.md)
   * [23 对链表进行插入排序](chapter2/23.md)
   * [24 排序链表](chapter2/24.md)
