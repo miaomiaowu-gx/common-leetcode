@@ -30,6 +30,8 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 
 ### 题解
 
+<img src="./imglinklist/01-876.png" width=300>
+
 
 ```java
 class Solution {
