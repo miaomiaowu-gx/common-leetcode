@@ -25,6 +25,24 @@
 
 ### 递归
 
+思路：判断头结点是否有重复元素
+ 
 
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null || head.next==null) return head;
 
-
+        //当前链表头节点有重复
+        if(head.val == head.next.val){
+            while (head!=null && head.next!=null && head.val == head.next.val){
+                head = head.next;
+            }
+            return deleteDuplicates(head.next);
+        }else{ //头节点没有重复
+            head.next = deleteDuplicates(head.next);
+            return head;
+        }
+    }
+}
+```
