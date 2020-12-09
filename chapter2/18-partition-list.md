@@ -35,3 +35,28 @@
 4. 否则，该节点应当是 after 链表的一部分。因此将其移到 after 中。
 
 5. 遍历完原有链表的全部元素之后，可以将 before 和 after 连接，组成所求的链表。
+
+
+```java
+class Solution {
+    public ListNode partition(ListNode head, int x) {
+        ListNode before_head = new ListNode(0);
+        ListNode before = before_head;
+        ListNode after_head = new ListNode(0);
+        ListNode after = after_head;
+        while (head != null){
+            if(head.val < x){
+                before.next = head;
+                before = before.next;
+            }else{
+                after.next = head;
+                after = after.next;
+            }
+            head = head.next;
+        }
+        after.next = null;
+        before.next = after_head.next;
+        return before_head.next;
+    }
+}
+```
