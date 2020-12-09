@@ -21,7 +21,28 @@
 
 ### 方法一：将值复制到数组中后用双指针法
 
+```java
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        ListNode curr = head;
+        while (curr!=null){
+            arr.add(curr.val);
+            curr = curr.next;
+        }
 
+        int front = 0, back = arr.size()-1;
+        while (front<back){
+            if(!arr.get(front).equals(arr.get(back))){
+                return false;
+            }
+            front++;
+            back--;
+        }
+        return true;
+    }
+}
+```
 
 
 ### 
