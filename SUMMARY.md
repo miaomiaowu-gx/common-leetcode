@@ -21,6 +21,7 @@
   * [9 环形链表](chapter2/09-linked-list-cycle.md)
   * [10 环形链表 II](chapter2/10-linked-list-cycle-ii.md)
   * [11 判断链表是否相交](chapter2/11-intersection-of-two-linked-lists.md)
+  * [12 回文链表](chapter2/12-palindrome-linked-list.md)
 * [第三章 堆栈](chapter3.md)
 * [第四章 二叉树](chapter4.md)
 * [第五章 图](chapter5.md)
