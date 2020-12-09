@@ -69,3 +69,33 @@ class Solution {
 
 思路 2：第一重循环枚举保留的节点本身，而为了编码方便，第二重循环可以枚举待移除节点的前驱节点，方便对节点进行移除。这样一来，使用「时间换空间」的方法，就可以不使用临时缓冲区。
 
+
+```java
+class Solution {
+    public ListNode removeDuplicateNodes(ListNode head) {
+        ListNode ob = head;
+        while (ob != null) {
+            ListNode oc = ob;
+            while (oc.next != null) {
+                if (oc.next.val == ob.val) {
+                    oc.next = oc.next.next;
+                } else {
+                    oc = oc.next;
+                }
+            }
+            ob = ob.next;
+        }
+        return head;
+    }
+}
+```
+
+复杂度分析
+
+* 时间复杂度：O(N^2)，其中 N 是给定链表中节点的数目。
+
+* 空间复杂度：O(1)。
+
+
+
+
