@@ -20,4 +20,51 @@
 ```
 
 
-### 
+### 快慢指针
+
+#### 实现 1 
+
+
+```java
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode two = head, one = head;
+        while (two!=null && two.next!=null){
+            two = two.next.next;
+            one = one.next;
+            if(two == one){
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+#### 实现 2 
+
+```java
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) {
+            return false;
+        }
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
+    }
+}
+```
+
+
+
+### 哈希表
+
+
