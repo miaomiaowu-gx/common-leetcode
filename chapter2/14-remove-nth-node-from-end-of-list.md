@@ -20,3 +20,24 @@
 
 ### 一次遍历(双指针)
 
+```java
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
+
+        ListNode fast = newHead, slow = newHead;
+        while (n-- >= 0 && fast!=null){
+            fast = fast.next;
+        }
+        while (fast!=null){
+            fast = fast.next;
+            slow = slow.next;
+        }
+        if(slow!=null && slow.next!=null){
+            slow.next = slow.next.next;
+        }
+        return newHead.next;
+    }
+}
+```
