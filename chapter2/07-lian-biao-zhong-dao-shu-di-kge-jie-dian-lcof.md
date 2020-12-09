@@ -16,3 +16,9 @@
 [剑指 Offer 22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 
 
+### 快慢指针
+
+定义两个指针，指针 1 先走 k-1 步，然后指针 2 和指针 1 同时前进，当指针 1 指向链表最后一个元素时，指针 2 即为所求。
+
+
+
