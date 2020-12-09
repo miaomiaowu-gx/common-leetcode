@@ -22,7 +22,34 @@
 ### 迭代
 
 
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null || head.next==null) {
+            return head;
+        }
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
 
+        ListNode a = newHead;
+        ListNode b = head;
+
+        while (b!=null && b.next!=null){
+            if(a.next.val!=b.next.val){
+                a = a.next;
+                b = b.next;
+            }else{
+                while (b!=null && b.next!=null && a.next.val==b.next.val){
+                    b = b.next;
+                }
+                a.next = b.next;
+                b = b.next;
+            }
+        }
+        return newHead.next;
+    }
+}
+```
 
 
 ### 递归
