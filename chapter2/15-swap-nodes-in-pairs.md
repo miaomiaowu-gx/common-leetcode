@@ -68,4 +68,16 @@ class Solution {
 
 4. 递归的终止条件是链表中没有节点，或者链表中只有一个节点，此时无法进行交换。
 
-
+```java
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = head.next;
+        head.next = swapPairs(newHead.next);
+        newHead.next = head;
+        return newHead;
+    }
+}
+```
