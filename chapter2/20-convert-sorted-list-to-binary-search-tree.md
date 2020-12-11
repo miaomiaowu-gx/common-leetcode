@@ -87,7 +87,38 @@ class Solution {
 <img src="./imglinklist/05-109.png" width=400>
 
 
+```java
+class Solution {
+    ListNode globalHead;
+    public TreeNode sortedListToBST(ListNode head) {
+        globalHead = head;
+        int len = getLength(head);
+        return buildTree(0,len-1);
 
+    }
+
+    public TreeNode buildTree(int left, int right){
+        if(left>right) return null;
+
+        int mid = (left+right+1)/2;
+        TreeNode root = new TreeNode();
+        root.left = buildTree(left,mid-1);
+        root.val = globalHead.val;
+        globalHead = globalHead.next;
+        root.right = buildTree(mid+1, right);
+        return root;
+    }
+
+   public int getLength(ListNode head){
+        int count = 0;
+        while (head!=null){
+            count++;
+            head = head.next;
+        }
+        return count;
+   }
+}
+```
 
 
 
