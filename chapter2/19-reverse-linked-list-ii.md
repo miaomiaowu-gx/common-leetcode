@@ -16,7 +16,7 @@
 
 [题解来源官网](https://leetcode-cn.com/problems/reverse-linked-list-ii/solution/fan-zhuan-lian-biao-ii-by-leetcode/)
 
-### 迭代链接反转
+### 迭代，相邻反转 
 
 
 反转 m 到 n 部分的链表，并重新连接，情况如下：
@@ -67,4 +67,11 @@ class Solution {
 * 空间复杂度: O(1)。仅仅在原有链表的基础上调整了一些指针，只使用了 O(1) 的额外存储空间来获得结果。
 
 
+### 迭代，遍历 m~n，不断向前插入
+
+
+
 ### 递归
+
+
+
