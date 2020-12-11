@@ -71,6 +71,7 @@ class Solution {
 
 思路：将 m~n 部分的代码不断的插入到前面
 
+<img src="./imglinklist/04-92-2.png" width=400>
 
 
 
