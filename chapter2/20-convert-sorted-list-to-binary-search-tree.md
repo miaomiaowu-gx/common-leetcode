@@ -29,5 +29,33 @@
 设当前链表的左端点为 left，右端点 right，包含关系为「左闭右开」，即 left 包含在链表中而 right 不包含在链表中。由「快慢指针法」找出链表的中位数节点 mid。
 
 
+```java
+class Solution {
+    public TreeNode sortedListToBST(ListNode head) {
+        return buildTree(head,null);
+    }
+
+    public TreeNode buildTree(ListNode left, ListNode right){
+        if(left==right) return null;
+
+        ListNode mid = getMedian(left, right);
+        TreeNode root = new TreeNode(mid.val);
+        root.left = buildTree(left, mid);
+        root.right = buildTree(mid.next, right);
+        return root;
+    }
+
+    //偶数，取后一个为中间数
+    public ListNode getMedian(ListNode left, ListNode right){
+        ListNode slow = left, fast = left;
+        while (fast!=right && fast.next!=right){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+}
+```
+
 
 ### 
