@@ -28,3 +28,5 @@ class Node {
 示例
 
 ![](/chapter2/imglinklist/06-138-01.png)
+
+
