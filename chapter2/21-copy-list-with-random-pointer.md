@@ -36,4 +36,7 @@ class Node {
 
 <img src="./imglinklist/06-138-02.png" width=300>
 
-
+```
+输入：head = [[1,1],[2,1]]
+输出：[[1,1],[2,1]]
+```
