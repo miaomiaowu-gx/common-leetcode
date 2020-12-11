@@ -18,4 +18,4 @@
  -10  5
 ```
 
-
+[题解](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/)
