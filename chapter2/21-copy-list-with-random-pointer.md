@@ -29,6 +29,10 @@ class Node {
 
 <img src="./imglinklist/06-138-01.png" width=300>
 
+```
+输入：head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+输出：[[7,null],[13,0],[11,4],[10,2],[1,0]]
+```
 
 <img src="./imglinklist/06-138-02.png" width=300>
 
