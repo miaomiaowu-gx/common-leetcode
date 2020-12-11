@@ -22,7 +22,7 @@
 反转 m 到 n 部分的链表，并重新连接，情况如下：
 
 
-<img src="./imglinklist/04-92.png" width=400>
+<img src="./imglinklist/04-92.png" width=500>
 
 
 
