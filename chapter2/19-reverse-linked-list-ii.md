@@ -71,6 +71,35 @@ class Solution {
 
 
 
+```java
+class Solution {
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+        if(head==null) return head;
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
+        ListNode pre = newHead, cur = head;
+
+        n = n-m;
+
+        //先走m-1步
+        while(m-->1){
+            pre = cur;
+            cur = cur.next;
+        }
+
+        //反转链表
+        while (n-->0){
+            ListNode t = cur.next;
+            cur.next = cur.next.next;
+            t.next = pre.next;
+            pre.next = t;
+        }
+
+        return newHead.next;
+    }
+}
+```
+
 ### 递归
 
 [题解](https://leetcode-cn.com/problems/reverse-linked-list-ii/solution/fan-zhuan-lian-biao-ii-by-leetcode/)
