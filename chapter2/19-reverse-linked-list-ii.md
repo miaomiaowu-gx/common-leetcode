@@ -22,6 +22,8 @@
 反转 m 到 n 部分的链表，情况如下：
 
 
+<img src="./imglinklist/04-92.png" width=400>
+
 
 
 ```java
