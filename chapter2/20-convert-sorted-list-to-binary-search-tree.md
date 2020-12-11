@@ -81,6 +81,7 @@ class Solution {
 
 3. 中位数节点对应的编号为 mid=(left+right+1)/2；
 
-4. 
+4. 左右子树对应的编号范围分别为 [left,mid−1] 和 [mid+1,right]。
 
+5. 
 
