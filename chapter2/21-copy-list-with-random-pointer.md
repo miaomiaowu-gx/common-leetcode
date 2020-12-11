@@ -27,6 +27,9 @@ class Node {
 
 示例
 
-![](/chapter2/imglinklist/06-138-01.png)
+<img src="./imglinklist/06-138-01.png" width=300>
+
+
+<img src="./imglinklist/06-138-02.png" width=300>
 
 
