@@ -84,4 +84,10 @@ class Solution {
 4. 左右子树对应的编号范围分别为 [left,mid−1] 和 [mid+1,right]。
 
 5. 如果 left>right，那么遍历到的位置对应着一个空节点，否则对应着二叉搜索树中的一个节点。
+<img src="./imglinklist/05-109.png" width=400>
+
+
+
+
+
 
