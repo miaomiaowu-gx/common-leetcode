@@ -104,7 +104,7 @@ class Solution {
 
 1. 从头指针开始遍历整个图
 
-![](/chapter2/imglinklist/06-138-04.png)
+<img src="./imglinklist/06-138-04.png" width=600>
 
 2. 
 
