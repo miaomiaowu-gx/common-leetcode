@@ -108,7 +108,11 @@ class Solution {
 
 2）当遍历到某个点时，如果已经有了当前节点的一个拷贝，不需要重复进行拷贝。
 
-3）
+3）如果还没拷贝过当前节点，创造一个新的节点，并把该节点放到已访问字典中，即：
+
+`visited_dictionary[current_node] = cloned_node_for_current_node`
+
+
 
 
 ### O(N) 空间的迭代
