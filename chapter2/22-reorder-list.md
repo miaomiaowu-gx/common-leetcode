@@ -100,6 +100,32 @@ class Solution {
 思路：因为链表不支持下标访问，所以无法随机访问链表中任意位置的元素。比较容易想到的一个方法是，利用线性表存储该链表，然后利用线性表可以下标访问的特点，直接按顺序访问指定元素，重建该链表即可。
 
 
+```java
+class Solution {
+    public void reorderList(ListNode head) {
+        if(head==null) return;
 
+        List<ListNode> list = new ArrayList<ListNode>();
+        ListNode node = head;
+        while (node != null) {
+            list.add(node);
+            node = node.next;
+        }
+
+        int i = 0, j = list.size() - 1;
+        while (i < j) {
+            list.get(i).next = list.get(j);
+            i++;
+            if (i == j) {
+                break;
+            }
+            list.get(j).next = list.get(i);
+            j--;
+        }
+        //最后一个元素置空
+        list.get(i).next = null;
+    }
+}
+```
 
 
