@@ -24,7 +24,10 @@
 [147. 对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 
 
-### 
+### 模拟插入排序
+
+
+创建哑节点 dummyHead，令 dummyHead.next = head。引入哑节点是为了便于在 head 节点之前插入节点。
 
 
 
