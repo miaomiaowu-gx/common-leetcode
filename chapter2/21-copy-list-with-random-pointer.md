@@ -119,7 +119,26 @@ cloned_node_for_current_node.next = copyRandomList(current_node.next);
 cloned_node_for_current_node.random = copyRandomList(current_node.random);
 ```
 
+```java
+class Solution {
+    // HashMap which holds old nodes as keys and new nodes as its values.
+    HashMap<Node, Node> visitedHash = new HashMap<Node, Node>();
 
+    public Node copyRandomList(Node head) {
+        if(head==null) return head;
+
+        if (this.visitedHash.containsKey(head)) {
+            return this.visitedHash.get(head);
+        }
+
+        Node node = new Node(head.val,null,null);
+        this.visitedHash.put(head, node);
+        node.next = copyRandomList(head.next);
+        node.random = copyRandomList(head.random);
+        return node;
+    }
+}
+```
 
 
 
