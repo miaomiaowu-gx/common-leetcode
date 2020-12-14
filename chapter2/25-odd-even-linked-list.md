@@ -20,7 +20,7 @@
 
 [328. 奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
 
-### 分离节点后合并
+### 分离节点后合并-实现1
 
 <img src="./imglinklist/07-328.png" width=400>
 
@@ -52,5 +52,36 @@ class Solution {
 * 空间复杂度：O(1)。只需要维护有限的指针。
 
 
+### 分离节点后合并-实现2
 
+
+
+```java
+class Solution {
+    public ListNode oddEvenList(ListNode head) {
+        // 分别定义奇偶链表的 虚拟头结点 和 尾结点
+        ListNode oddHead = new ListNode();
+        ListNode oddTail = oddHead;
+        ListNode evenHead = new ListNode();
+        ListNode evenTail = evenHead;
+        // 遍历原链表，根据 isOdd 标识位决定将当前结点插入到奇链表还是偶链表（尾插法）
+        boolean isOdd = true;
+        while (head != null) {
+            if (isOdd) {
+                oddTail.next = head;
+                oddTail = oddTail.next;
+            } else {
+                evenTail.next = head;
+                evenTail = evenTail.next;
+            }
+            head = head.next;
+            isOdd = !isOdd;
+        }
+        // 将奇链表后面拼接上偶链表，并将偶链表的next设置为null
+        oddTail.next = evenHead.next;
+        evenTail.next = null;
+        return oddHead.next;
+    }
+}
+```
 
