@@ -37,7 +37,7 @@
   * [25 奇偶链表](chapter2/25-odd-even-linked-list.md)
   * [26 扁平化多级双向链表](chapter2/26-flatten-a-multilevel-doubly-linked-list.md)
   * [27 两数相加 II](chapter2/27-add-two-numbers-ii.md)
-  * [28 设计链表](chapter2/28.md)
+  * [28 设计链表](chapter2/28-design-linked-list.md)
   * [29 分隔链表](chapter2/29.md)
   * [30 链表组件](chapter2/30.md)
   * [31 链表中的下一个更大节点](chapter2/31.md)
