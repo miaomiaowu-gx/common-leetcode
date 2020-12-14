@@ -48,12 +48,13 @@
   * [36 复杂链表的复制](chapter2/36.md)
 * [第三章 堆栈](chapter3.md)
 * [第四章 二叉树](chapter4.md)
-* [第五章 图](chapter5.md)
+* [第五章 数组](chapter5.md)
 * [第六章 动态规划](chapter6.md)
 * [第七章 深度优先搜索](chapter7.md)
 * [第八章 广度优先搜索](chapter8.md)
 * [第九章 回溯算法](chapter9.md)
-* [第十章 其他常见算法](chapter10.md)
+* [第十章 图](chapter10.md)
+* [第十一章 其他常见算法](chapter11.md)
 
 
 
