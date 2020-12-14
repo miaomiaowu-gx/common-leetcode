@@ -41,7 +41,7 @@
   * [29 分隔链表](chapter2/29-split-linked-list-in-parts.md)
   * [30 链表组件](chapter2/30-linked-list-components.md)
   * [31 链表中的下一个更大节点](chapter2/31-next-greater-node-in-linked-list.md)
-  * [32 从链表中删去总和值为零的连续节点](chapter2/32.md)
+  * [32 从链表中删去总和值为零的连续节点](chapter2/32-remove-zero-sum-consecutive-nodes-from-linked-list.md)
   * [33 二叉树中的列表 ](chapter2/33.md)
   * [34 合并两个链表](chapter2/34-merge-in-between-linked-lists.md)
   * [35 设计前中后队列](chapter2/35.md)
