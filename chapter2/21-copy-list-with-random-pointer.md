@@ -51,7 +51,42 @@ class Node {
 
 <img src="./imglinklist/06-138-03.png" width=600>
 
+```java
+class Solution {
+    public Node copyRandomList(Node head) {
+        if(head==null) return head;
 
+        //a->b->c to a->a'->b->b'->c->c'
+        Node ptr = head;
+        while (ptr!=null){
+            Node t = new Node(ptr.val);
+            t.next = ptr.next;
+            ptr.next = t;
+            ptr = t.next;
+        }
+
+        //连接 random 指针
+        ptr = head;
+        while (ptr!=null){
+            //随机指针有可能指向空
+            ptr.next.random = (ptr.random!=null)?ptr.random.next:null;
+            ptr = ptr.next.next;
+        }
+
+        //拆分为新旧两个链表
+        Node newHead = head.next;
+        Node p1 = head, p2=head.next;
+        while (p1!=null){
+            p1.next = p1.next.next;
+            p2.next = p2.next!=null? p2.next.next:null; //最后一个节点时
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        return newHead;
+    }
+}
+```
 
 
 ### 回溯
