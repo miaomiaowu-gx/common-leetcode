@@ -34,7 +34,13 @@
 
 4. 维护 curr 为待插入的元素，初始时 curr = head.next。
 
-5. 
+5. 比较 lastSorted 和 curr 的节点值。
+
+   * 若 lastSorted.val <= curr.val，说明 curr 应该位于 lastSorted 之后，将 lastSorted 后移一位，curr 变成新的 lastSorted。
+
+   * 否则，从链表的头节点开始往后遍历链表中的节点，寻找插入 curr 的位置。令 prev 为插入 curr 的位置的前一个节点，
+
+
 
 
 
