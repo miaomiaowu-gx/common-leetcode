@@ -112,8 +112,12 @@ class Solution {
 
 `visited_dictionary[current_node] = cloned_node_for_current_node`
 
+4）针对两种情况进行回溯调用：一个顺着 random 指针调用，另一个沿着 next 指针调用。步骤 1 中将 random 和 next 指针分别红红色和蓝色标注。然后分别对两个指针进行函数递归调用：
 
-
+```java
+cloned_node_for_current_node.next = copyRandomList(current_node.next);
+cloned_node_for_current_node.random = copyRandomList(current_node.random);
+```
 
 ### O(N) 空间的迭代
 
