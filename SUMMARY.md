@@ -39,7 +39,7 @@
   * [27 两数相加 II](chapter2/27-add-two-numbers-ii.md)
   * [28 设计链表](chapter2/28-design-linked-list.md)
   * [29 分隔链表](chapter2/29-split-linked-list-in-parts.md)
-  * [30 链表组件](chapter2/30.md)
+  * [30 链表组件](chapter2/30-linked-list-components.md)
   * [31 链表中的下一个更大节点](chapter2/31.md)
   * [32 从链表中删去总和值为零的连续节点](chapter2/32.md)
   * [33 二叉树中的列表 ](chapter2/33.md)
