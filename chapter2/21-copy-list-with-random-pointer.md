@@ -151,7 +151,7 @@ class Solution {
 
 ### O(N) 空间的迭代
 
-思路：使用 HashMap 
+思路：使用 HashMap 记录赋值的新链表节点以及节点是否生成。
 
 ```java
 class Solution {
