@@ -30,7 +30,9 @@
 
 2. 创建哑节点 dummyHead，令 dummyHead.next = head。引入哑节点是为了便于在 head 节点之前插入节点。
 
-3. 
+3. 维护 lastSorted 为链表的已排序部分的最后一个节点，初始时 lastSorted = head。
+
+4. 
 
 
 
