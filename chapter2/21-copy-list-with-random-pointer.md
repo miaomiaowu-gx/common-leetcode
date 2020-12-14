@@ -49,8 +49,7 @@ class Node {
 
 3. next 指针也需要被正确赋值，以便将新的节点正确链接同时将旧节点重新正确链接。
 
-
-
+<img src="./imglinklist/06-138-03.png" width=600>
 
 
 ### 回溯
