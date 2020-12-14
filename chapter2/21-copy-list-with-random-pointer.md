@@ -52,6 +52,8 @@ class Node {
 <img src="./imglinklist/06-138-03.png" width=600>
 
 
+
+
 ### 回溯
 
 
