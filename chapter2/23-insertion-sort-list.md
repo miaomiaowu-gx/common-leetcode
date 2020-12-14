@@ -42,7 +42,9 @@
    
 6. 令 curr = lastSorted.next，此时 curr 为下一个待插入的元素。
 
-7.       
+7. 重复上述步骤，直到 curr 变成空，排序结束。
+
+8. 返回 dummyHead.next，为排序后的链表的头节点。       
 
 
 
