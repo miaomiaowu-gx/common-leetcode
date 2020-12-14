@@ -33,7 +33,7 @@
   * [21 复制带随机指针的链表](chapter2/21-copy-list-with-random-pointer.md)
   * [22 重排链表](chapter2/22-reorder-list.md)
   * [23 对链表进行插入排序](chapter2/23-insertion-sort-list.md)
-  * [24 排序链表](chapter2/24.md)
+  * [24 排序链表](chapter2/24-sort-list.md)
   * [25 奇偶链表](chapter2/25.md)
   * [26 扁平化多级双向链表](chapter2/26.md)
   * [27 两数相加 II](chapter2/27.md)
