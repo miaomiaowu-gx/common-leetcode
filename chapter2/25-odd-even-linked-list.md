@@ -22,6 +22,10 @@
 
 ### 分离节点后合并
 
+<img src="./imglinklist/07-328.png" width=400>
+
+
+
 
 
 
