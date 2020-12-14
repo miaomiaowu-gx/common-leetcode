@@ -26,10 +26,11 @@
 
 ### 模拟插入排序
 
+1. 首先判断给定的链表是否为空，若为空，则不需要进行排序，直接返回。
 
-创建哑节点 dummyHead，令 dummyHead.next = head。引入哑节点是为了便于在 head 节点之前插入节点。
+2. 创建哑节点 dummyHead，令 dummyHead.next = head。引入哑节点是为了便于在 head 节点之前插入节点。
 
-
+3. 
 
 
 
