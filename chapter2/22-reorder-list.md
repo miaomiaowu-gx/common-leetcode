@@ -37,8 +37,53 @@
 
 ```java
 
+class Solution {
+    public void reorderList(ListNode head) {
+        if(head==null) return;
+        ListNode mid = middleNode(head);
+        ListNode midrev= reverseList(mid.next);
+        //将链表从中部断开
+        mid.next = null;
+        mergeList(head, midrev);
+    }
 
+    //偶数，找前一个节点
+    public ListNode middleNode(ListNode head){
+        ListNode slow = head, fast = head;
+        while (fast!=null && fast.next!=null && fast.next.next!=null){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
 
+    public ListNode reverseList(ListNode head){
+        ListNode pre = null, cur = head;
+        while (cur!=null){
+            ListNode t = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = t;
+        }
+        return pre;
+    }
+
+    public void mergeList(ListNode l1, ListNode l2){
+        ListNode t1;
+        ListNode t2;
+        //l1.len > l2.len
+        while (l1!=null && l2!=null){
+            t1 = l1.next;
+            t2 = l2.next;
+
+            l1.next = l2;
+            l1 = t1;
+
+            l2.next = l1;
+            l2 = t2;
+        }
+    }
+}
 ```
 
 
