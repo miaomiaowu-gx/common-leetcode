@@ -32,7 +32,9 @@
 
 3. 维护 lastSorted 为链表的已排序部分的最后一个节点，初始时 lastSorted = head。
 
-4. 
+4. 维护 curr 为待插入的元素，初始时 curr = head.next。
+
+5. 
 
 
 
