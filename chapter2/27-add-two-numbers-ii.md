@@ -20,3 +20,34 @@
 
 对于逆序处理首先想到栈，把所有数字压入栈中，再依次取出相加。计算过程中需要注意进位的情况。
 
+```java
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        Stack<Integer> stack1 = new Stack<Integer>();
+        Stack<Integer> stack2 = new Stack<Integer>();
+        while (l1!=null){
+            stack1.push(l1.val);
+            l1 = l1.next;
+        }
+        while (l2!=null){
+            stack2.push(l2.val);
+            l2 = l2.next;
+        }
+        ListNode ans = null;
+        int carry = 0;
+        while (!stack1.isEmpty() || !stack2.isEmpty() || carry!=0){
+            int val1 = stack1.isEmpty()? 0:stack1.pop();
+            int val2 = stack2.isEmpty()? 0:stack2.pop();
+            int cur = val1+val2+carry;
+            carry = cur/10;
+            cur = cur % 10;
+            ListNode curNode = new ListNode(cur);
+            curNode.next = ans;
+            ans = curNode;
+        }
+        return ans;
+    }
+}
+```
+
+
