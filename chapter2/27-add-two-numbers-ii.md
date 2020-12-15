@@ -108,6 +108,74 @@ class Solution {
 
 思路：两个链表长度对齐之后每位加和生成新链表，之后反转新链表，边反转边计算进位
 
+```java
+class Solution {
+
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int length1 = lengthOf(l1);
+        int length2 = lengthOf(l2);
+        if (length1 > length2) {
+            return addTwoNumbers(l1,l2,length1 - length2);
+        }else {
+            return addTwoNumbers(l2,l1,length2 - length1);
+        }
+    }
+
+    ListNode addTwoNumbers(ListNode theLong, ListNode theShort, int diff) {
+        ListNode head = null;
+        //头插法，长链表比短链表多出的节点表示高位，先直接放入新链表
+        while (diff > 0) {
+            ListNode node = new ListNode(theLong.val);
+            node.next = head;
+            head = node;
+            theLong = theLong.next;
+            diff--;
+        }
+        //两个链表对齐之后开始加和，先不进位，因为进位需要从低往高位走，现在是从高位往低位走
+        //直接保存加和结果
+        while (null != theLong) {
+            ListNode node = new ListNode(theLong.val + theShort.val);
+            node.next = head;
+            head = node;
+            theLong = theLong.next;
+            theShort = theShort.next;
+        }
+        //头插法结束，链表指针方向为从低位到高位
+        //因为进位是从低位往高位走，所以边反转边进位
+        ListNode pre = null;
+        ListNode cur = head;
+        int overflow = 0;
+        while (null != cur) {
+            int sum = cur.val + overflow;
+            overflow = sum /10;
+            sum = sum %10;
+            cur.val = sum; //赋上进位之后该节点的值
+            //以下代码主要是反转新链表
+            ListNode temp = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = temp;
+        }
+        //最后一个节点产生了进位，则要在高位头插一个节点
+        if (overflow>0) {
+            ListNode node = new ListNode(overflow);
+            node.next = pre;
+            pre = node;
+        }
+        //新链表反转加进位之后得到 1->3->0->2
+        return pre;
+    }
+
+    int lengthOf(ListNode l) {
+        int length = 0;
+        while (null != l) {
+            length++;
+            l = l.next;
+        }
+        return length;
+    }
+}
+```
 
 
 
