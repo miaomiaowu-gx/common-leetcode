@@ -47,7 +47,7 @@
   * [35 设计前中后队列](chapter2/35-design-front-middle-back-queue.md)
 * [第三章 堆栈](chapter3.md)
 * [第四章 二叉树](chapter4.md)
-* [第五章 数组-TOT 100](chapter5.md)
+* [第五章 数组-热题 TOT 100](chapter5.md)
   * [1 两数之和](chapter5/01-two-sum.md)
   * [2 最大子序和](chapter5/02-maximum-subarray.md)
   * [3 买卖股票的最佳时机](chapter5/03-best-time-to-buy-and-sell-stock.md)
