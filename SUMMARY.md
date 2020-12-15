@@ -45,7 +45,6 @@
   * [33 二叉树中的列表](chapter2/33-linked-list-in-binary-tree.md)
   * [34 合并两个链表](chapter2/34-merge-in-between-linked-lists.md)
   * [35 设计前中后队列](chapter2/35-design-front-middle-back-queue.md)
-  * [36 复杂链表的复制](chapter2/36.md)
 * [第三章 堆栈](chapter3.md)
 * [第四章 二叉树](chapter4.md)
 * [第五章 数组](chapter5.md)
