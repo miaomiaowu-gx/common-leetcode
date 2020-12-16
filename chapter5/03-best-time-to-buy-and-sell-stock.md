@@ -24,7 +24,7 @@
 ### 一次遍历
 
 
-
+`f(i) = prices[i] - minprice`，其中 f(i) 为第 i 出售股票最多赚的金额，minprice 为第 0 到 i 天的最低买入。
 
 
 
