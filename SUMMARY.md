@@ -67,7 +67,7 @@
   * [17 最小路径和](chapter5/17-minimum-path-sum.md)
   * [18 颜色分类](chapter5/18-sort-colors.md)
   * [19 子集](chapter5/19-subsets.md)
-  * [20 单词搜索](chapter5/2.md)
+  * [20 单词搜索](chapter5/20-word-search.md)
 * [第六章 动态规划](chapter6.md)
 * [第七章 深度优先搜索](chapter7.md)
 * [第八章 广度优先搜索](chapter8.md)
