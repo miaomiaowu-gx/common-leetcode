@@ -61,6 +61,15 @@ class Solution {
 
 将数组 nums 中的所有元素按照单调递增或单调递减的顺序排序，那么下标为 n/2 的元素一定时众数。
 
+```java
+class Solution {
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        return nums[nums.length/2];
+    }
+}
+```
+
 ### 
 
 
