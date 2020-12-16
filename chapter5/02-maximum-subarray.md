@@ -88,6 +88,9 @@ class Solution {
 * 首先最好维护的是 iSum，区间 [l, r] 的 iSum 就等于「左子区间」的 iSum 加上「右子区间」的 iSum。
 
 
+* 对于 [l, r] 的 lSum，存在两种可能，它要么等于「左子区间」的 lSum，要么等于「左子区间」的 iSum 加上「右子区间」的 lSum，二者取大。
+
+
 * 
 
 
