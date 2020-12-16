@@ -23,7 +23,32 @@
 使用哈希映射（HashMap）来存储每个元素以及出现的次数。对于哈希映射中的每个键值对，键表示一个元素，值表示该元素出现的次数。
 
 
+```java
+class Solution {
+    private Map<Integer, Integer> countNums(int[] nums) {
+        Map<Integer, Integer> counts = new HashMap<Integer, Integer>();
+        for (int num : nums) {
+            if (!counts.containsKey(num)) {
+                counts.put(num, 1);
+            } else {
+                counts.put(num, counts.get(num) + 1);
+            }
+        }
+        return counts;
+    }
 
+    public int majorityElement(int[] nums) {
+        Map<Integer, Integer> counts = countNums(nums);
+        Map.Entry<Integer, Integer> maxv = null; //用于记录最大值
+        for(Map.Entry<Integer, Integer> cur: counts.entrySet()){
+            if(maxv == null || cur.getValue()>maxv.getValue()){
+                maxv = cur;
+            }
+        }
+        return maxv.getKey();
+    }
+}
+```
 
 
 ###
