@@ -58,6 +58,7 @@
   * [8 三数之和](chapter5/08-3sum.md)
   * [9 下一个排列](chapter5/09-next-permutation.md)
   * [10 搜索旋转排序数组](chapter5/10-search-in-rotated-sorted-array.md)
+  *[11 排序数组中查找元素的第一个和最后一个位置](chapter5/11-.md)
 * [第六章 动态规划](chapter6.md)
 * [第七章 深度优先搜索](chapter7.md)
 * [第八章 广度优先搜索](chapter8.md)
