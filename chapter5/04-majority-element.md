@@ -130,7 +130,42 @@ class Solution {
   * 如果它们的众数相同，则这一段区间的众数是它们相同的值。
   * 否则，需要比较两个众数在整个区间内出现的次数来决定该区间的众数。
 
+```java
+class Solution {
+    private int countInRange(int[] nums, int num, int lo, int hi) {
+        int count = 0;
+        for (int i = lo; i <= hi; i++) {
+            if (nums[i] == num) {
+                count++;
+            }
+        }
+        return count;
+    }
 
+    private int majorityElementRec(int[] nums, int lo, int hi) {
+        if (lo == hi) {
+            return nums[lo];
+        }
+
+        int mid = (hi - lo) / 2 + lo;
+        int left = majorityElementRec(nums, lo, mid);
+        int right = majorityElementRec(nums, mid + 1, hi);
+
+        if (left == right) {
+            return left;
+        }
+
+        int leftCount = countInRange(nums, left, lo, hi);
+        int rightCount = countInRange(nums, right, lo, hi);
+
+        return leftCount > rightCount ? left : right;
+    }
+
+    public int majorityElement(int[] nums) {
+        return majorityElementRec(nums, 0, nums.length - 1);
+    }
+}
+```
 
 
 
