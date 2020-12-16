@@ -198,7 +198,6 @@ count:      1  2  1  2  1  0   1  0   1  2  1  0   1  2  3  4
 
 ```java
 class Solution {
-
     public int majorityElement(int[] nums) {
         int count = 0;
         Integer candidate = null;
