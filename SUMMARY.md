@@ -65,7 +65,7 @@
   * [15 合并区间](chapter5/15-merge-intervals.md)
   * [16 不同路径](chapter5/16-unique-paths.md)
   * [17 最小路径和](chapter5/17-minimum-path-sum.md)
-  * [18 颜色分类](chapter5/18.md)
+  * [18 颜色分类](chapter5/18-sort-colors.md)
   * [19 子集](chapter5/19.md)
   * [20 单词搜索](chapter5/2.md)
 * [第六章 动态规划](chapter6.md)
