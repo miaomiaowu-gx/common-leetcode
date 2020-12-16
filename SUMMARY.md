@@ -73,7 +73,7 @@
   * [23 除自身以外数组的乘积](chapter5/23-product-of-array-except-self.md)
   * [24 寻找重复数](chapter5/24-find-the-duplicate-number.md)
   * [25 和为K的子数组](chapter5/25-subarray-sum-equals-k.md)
-  * [26 最短无序连续子数组](chapter5/26.md)
+  * [26 最短无序连续子数组](chapter5/26-shortest-unsorted-continuous-subarray.md)
   * [27 任务调度器](chapter5/27.md)
 * [第六章 动态规划](chapter6.md)
 * [第七章 深度优先搜索](chapter7.md)
