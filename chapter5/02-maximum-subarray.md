@@ -18,3 +18,23 @@
 
 ### 遍历
 
+
+
+```java
+class Solution {
+    public int maxSubArray(int[] nums) {
+        if(nums==null || nums.length==0) return 0;
+        int maxres = Integer.MIN_VALUE;
+        int tempMax = 0;
+        for(int i=0; i<nums.length; i++){
+            tempMax = tempMax + nums[i];
+            maxres = Math.max(tempMax, maxres);
+            if(tempMax<0){
+                tempMax = 0;
+            }
+        }
+        return maxres;
+    }
+}
+```
+
