@@ -56,7 +56,7 @@
   * [6 找到所有数组中消失的数字](chapter5/06-find-all-numbers-disappeared-in-an-array.md)
   * [7 盛最多水的容器](chapter5/07-container-with-most-water.md)
   * [8 三数之和](chapter5/08-3sum.md)
-  * [9 下一个排列](chapter5/09-.md)
+  * [9 下一个排列](chapter5/09-next-permutation.md)
   * [10 搜索旋转排序数组](chapter5/10-.md)
 * [第六章 动态规划](chapter6.md)
 * [第七章 深度优先搜索](chapter7.md)
