@@ -79,7 +79,7 @@
   * [29 接雨水](chapter5/29-trapping-rain-water.md)
   * [30 柱状图中最大的矩形](chapter5/30-largest-rectangle-in-histogram.md)
   * [31 最大矩形](chapter5/31-maximal-rectangle.md)
-  * [32 最长连续序列](chapter5/32.md)
+  * [32 最长连续序列](chapter5/32-longest-consecutive-sequence.md)
 * [第六章 动态规划](chapter6.md)
 * [第七章 深度优先搜索](chapter7.md)
 * [第八章 广度优先搜索](chapter8.md)
