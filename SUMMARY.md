@@ -69,7 +69,7 @@
   * [19 子集](chapter5/19-subsets.md)
   * [20 单词搜索](chapter5/20-word-search.md)
   * [21 从前序与中序遍历序列构造二叉树](chapter5/21-construct-binary-tree-preorder-inorder.md)
-  * [22 乘积最大子数组](chapter5/22.md)
+  * [22 乘积最大子数组](chapter5/22-maximum-product-subarray.md)
   * [23 除自身以外数组的乘积](chapter5/23.md)
   * [24 寻找重复数](chapter5/24.md)
   * [25 和为K的子数组](chapter5/25.md)
