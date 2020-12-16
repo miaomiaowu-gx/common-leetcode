@@ -173,7 +173,7 @@ class Solution {
 
 * 空间复杂度：O(logn)。
 
-### 
+### Boyer-Moore 投票算法
 
 
 
