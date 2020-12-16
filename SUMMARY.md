@@ -62,7 +62,7 @@
   * [12 组合总和](chapter5/12-combination-sum.md)
   * [13 旋转图像](chapter5/13-rotate-image.md)
   * [14 跳跃游戏](chapter5/14-jump-game.md)
-  * [15 合并区间](chapter5/15.md)
+  * [15 合并区间](chapter5/15-merge-intervals.md)
   * [16 不同路径](chapter5/16.md)
   * [17 最小路径和](chapter5/17.md)
   * [18 颜色分类](chapter5/18.md)
