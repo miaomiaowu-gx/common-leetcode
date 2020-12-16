@@ -60,7 +60,7 @@
   * [10 搜索旋转排序数组](chapter5/10-search-in-rotated-sorted-array.md)
   * [11 排序数组中查找元素的第一-最后一个位置](chapter5/11-find-first-and-last-position.md)
   * [12 组合总和](chapter5/12-combination-sum.md)
-  * [13 旋转图像](chapter5/13.md)
+  * [13 旋转图像](chapter5/13-rotate-image.md)
   * [14 跳跃游戏](chapter5/14.md)
   * [15 合并区间](chapter5/15.md)
   * [16 不同路径](chapter5/16.md)
