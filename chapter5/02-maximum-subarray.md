@@ -71,6 +71,7 @@ class Solution {
 
 ### 分治
 
+思路：定义一个操作 get(a, l, r) 表示查询 a 序列 [l, r] 区间内的最大子段和，那么最终要求的答案就是 get(nums, 0, nums.size() - 1)。
 
 
 
