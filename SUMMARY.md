@@ -64,7 +64,7 @@
   * [14 跳跃游戏](chapter5/14-jump-game.md)
   * [15 合并区间](chapter5/15-merge-intervals.md)
   * [16 不同路径](chapter5/16-unique-paths.md)
-  * [17 最小路径和](chapter5/17.md)
+  * [17 最小路径和](chapter5/17-minimum-path-sum.md)
   * [18 颜色分类](chapter5/18.md)
   * [19 子集](chapter5/19.md)
   * [20 单词搜索](chapter5/2.md)
