@@ -196,7 +196,22 @@ candidate:  7  7  7  7  7  7   5  5   5  5  5  5   7  7  7  7
 count:      1  2  1  2  1  0   1  0   1  2  1  0   1  2  3  4
 ```
 
+```java
+class Solution {
 
+    public int majorityElement(int[] nums) {
+        int count = 0;
+        Integer candidate = null;
+        for(int v: nums){
+            if(count==0){
+                candidate = v;
+            }
+            count += (v==candidate)? 1:-1;
+        }
+        return candidate;
+    }
+}
+```
 
 
 
