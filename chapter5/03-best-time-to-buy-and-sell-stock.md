@@ -26,5 +26,19 @@
 
 `f(i) = prices[i] - minprice`，其中 f(i) 为第 i 出售股票最多赚的金额，minprice 为第 0 到 i 天的最低买入。
 
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int minvalue = Integer.MAX_VALUE;
+        int maxv = 0;
+        for(int i=0; i<prices.length; i++){
+            maxv = Math.max(maxv, prices[i]-minvalue);
+            minvalue = Math.min(minvalue, prices[i]);
+        }
+        return maxv;
+    }
+}
+```
+
 
 
