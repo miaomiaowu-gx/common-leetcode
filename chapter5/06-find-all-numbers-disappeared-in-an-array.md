@@ -22,7 +22,7 @@
 
 思路如下：
 
-
+<img src="./imgarray/02-06-448.png" width=500>
 
 
 
