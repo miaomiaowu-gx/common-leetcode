@@ -22,4 +22,18 @@
 <img src="./imgarray/01-05-283.png" width=600>
 
 ```java
-
+class Solution {
+    public void moveZeroes(int[] nums) {
+        if(nums==null) return;
+        int j=0;
+        for(int i=0; i<nums.length; i++){
+            //当前数不为0，则交换i与j
+            if(nums[i]!=0){
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j++] = temp;
+            }
+        }
+    }
+}
+```
