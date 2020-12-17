@@ -38,6 +38,14 @@
 
 
 
+思路：由于数组已经排序，因此整个数组是单调递增的，可以利用二分法来加速查找的过程。
+
+考虑 \textit{target}target 开始和结束位置，其实我们要找的就是数组中「第一个等于 \textit{target}target 的位置」（记为 \textit{leftIdx}leftIdx）和「第一个大于 \textit{target}target 的位置减一」（记为 \textit{rightIdx}rightIdx）。
+
+二分查找中，寻找 \textit{leftIdx}leftIdx 即为在数组中寻找第一个大于等于 \textit{target}target 的下标，寻找 \textit{rightIdx}rightIdx 即为在数组中寻找第一个大于 \textit{target}target 的下标，然后将下标减一。两者的判断条件不同，为了代码的复用，我们定义 binarySearch(nums, target, lower) 表示在 \textit{nums}nums 数组中二分查找 \textit{target}target 的位置，如果 \textit{lower}lower 为 \rm truetrue，则查找第一个大于等于 \textit{target}target 的下标，否则查找第一个大于 \textit{target}target 的下标。
+
+最后，因为 \textit{target}target 可能不存在数组中，因此我们需要重新校验我们得到的两个下标 \textit{leftIdx}leftIdx 和 \textit{rightIdx}rightIdx，看是否符合条件，如果符合条件就返回 [\textit{leftIdx},\textit{rightIdx}][leftIdx,rightIdx]，不符合就返回 [-1,-1][−1,−1]。
+
 
 
 
