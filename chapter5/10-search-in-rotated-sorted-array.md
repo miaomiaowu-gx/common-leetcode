@@ -39,5 +39,33 @@
 * 如果 [mid, r] 是有序数组，且 target 的大小满足 [nums[mid+1],nums[r]]，则应该将搜索范围缩小至 [mid + 1, r]，否则在 [l, mid - 1] 中寻找。
 
 
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        int n = nums.length;
+        if(nums==null || n==0) return -1;
+        int l = 0, r = n - 1;
+        while (l<=r){
+            int mid = (l+r)/2;
+            if(nums[mid]==target) return mid;
 
+            if(nums[0]<=nums[mid]){
+                //0~mid为有序部分
+                if(nums[0]<=target && target<=nums[mid]){
+                    r = mid -1;
+                }else{
+                    l = mid + 1;
+                }
+            }else{
+                if(nums[mid]<=target && target <=nums[n-1]){
+                    l = mid + 1;
+                }else {
+                    r = mid -1;
+                }
+            }
+        }
+        return -1;
+    }
+}
+```
 
