@@ -49,15 +49,15 @@ class Solution {
             int mid = (l+r)/2;
             if(nums[mid]==target) return mid;
 
-            if(nums[0]<=nums[mid]){
+            if(nums[l]<=nums[mid]){
                 //0~mid为有序部分
-                if(nums[0]<=target && target<=nums[mid]){
+                if(nums[l]<=target && target<=nums[mid]){
                     r = mid -1;
                 }else{
                     l = mid + 1;
                 }
             }else{
-                if(nums[mid]<=target && target <=nums[n-1]){
+                if(nums[mid]<=target && target <=nums[r]){
                     l = mid + 1;
                 }else {
                     r = mid -1;
