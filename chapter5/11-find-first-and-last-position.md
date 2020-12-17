@@ -42,7 +42,7 @@
 
 * 二分查找中，寻找 leftIdx 即为在数组中寻找第一个大于等于 target 的下标，寻找 rightIdx 即为在数组中寻找第一个大于 target 的下标，然后将下标减一。两者的判断条件不同，为了代码的复用，定义 binarySearch(nums, target, lower) 表示在 nums 数组中二分查找target 的位置，如果 lower 为 true，则查找第一个大于等于 target 的下标，否则查找第一个大于 target 的下标。
 
-最后，因为 \textit{target}target 可能不存在数组中，因此我们需要重新校验我们得到的两个下标 \textit{leftIdx}leftIdx 和 \textit{rightIdx}rightIdx，看是否符合条件，如果符合条件就返回 [\textit{leftIdx},\textit{rightIdx}][leftIdx,rightIdx]，不符合就返回 [-1,-1][−1,−1]。
+* 最后，因为 target 可能不存在数组中，因此需要重新校验得到的两个下标 leftIdx 和 rightIdx，看是否符合条件，如果符合条件就返回 [leftIdx,rightIdx]，不符合就返回 [−1,−1]。
 
 
 
