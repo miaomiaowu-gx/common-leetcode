@@ -45,7 +45,22 @@ class Solution {
 
 思路：创建两个指针 i 和 j，第一次遍历的时候指针 j 用来记录当前有多少非 0 元素。即遍历的时候每遇到一个非 0 元素就将其往数组左边挪，第一次遍历完后，j 指针的下标就指向了最后一个非 0 元素下标。第二次遍历的时候，起始位置就从 j 开始到结束，将剩下的这段区域内的元素全部置为 0。
 
-
+```java
+class Solution {
+    public void moveZeroes(int[] nums) {
+        if(nums==null) return;
+        int j=0;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i]!=0){
+                nums[j++] = nums[i];
+            }
+        }
+        for(int i=j; i<nums.length;i++){
+            nums[i]=0;
+        }
+    }
+}
+```
 
 
 
