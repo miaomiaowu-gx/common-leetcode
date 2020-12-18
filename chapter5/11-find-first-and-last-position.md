@@ -40,7 +40,7 @@
 
 思路：由于数组已经排序，因此整个数组是单调递增的，可以利用二分法来加速查找的过程。考虑 target 开始和结束位置，其实要找的就是数组中「第一个等于 target 的位置」（记为 leftIdx）和「第一个大于 target 的位置减一」（记为 rightIdx）。
 
-* 二分查找中，寻找 leftIdx 即为在数组中寻找第一个大于等于 target 的下标，寻找 rightIdx 即为在数组中寻找第一个大于 target 的下标，然后将下标减一。两者的判断条件不同，为了代码的复用，定义 binarySearch(nums, target, lower) 表示在 nums 数组中二分查找target 的位置，如果 lower 为 true，则查找第一个大于等于 target 的下标，否则查找第一个大于 target 的下标。
+* 二分查找中，寻找 leftIdx 即为在数组中寻找第一个【大于等于】 target 的下标，寻找 rightIdx 即为在数组中寻找第一个【大于】 target 的下标，然后将下标减一。两者的判断条件不同，为了代码的复用，定义 binarySearch(nums, target, lower) 表示在 nums 数组中二分查找target 的位置，如果 lower 为 true，则查找第一个大于等于 target 的下标，否则查找第一个大于 target 的下标。
 
 * 最后，因为 target 可能不存在数组中，因此需要重新校验得到的两个下标 leftIdx 和 rightIdx，看是否符合条件，如果符合条件就返回 [leftIdx,rightIdx]，不符合就返回 [−1,−1]。
 
