@@ -84,7 +84,75 @@ class Solution {
 * 空间复杂度：O(1)。只需要常数空间存放若干变量。
 
 
+### 实现 2
 
+```java
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int len = nums.length;
+        if (len == 0) {
+            return new int[]{-1, -1};
+        }
+
+        int firstPosition = findFirstPosition(nums, target);
+        if (firstPosition == -1) {
+            return new int[]{-1, -1};
+        }
+
+        int lastPosition = findLastPosition(nums, target);
+        return new int[]{firstPosition, lastPosition};
+    }
+
+    // 查找第一个等于target的位置.
+    // 因此找到等于时，不直接返回，而是缩小右侧空间，right=mid.
+    // 继续查找，左侧仍然可能存在 target.
+    private int findFirstPosition(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            // 小于一定不是解
+            if (nums[mid] < target) {
+                // 下一轮搜索区间是 [mid + 1, right]
+                left = mid + 1;
+            } else if (nums[mid] == target) {
+                // 下一轮搜索区间是 [left, mid]
+                right = mid;
+            } else {
+                // nums[mid] > target，下一轮搜索区间是 [left, mid - 1]
+                right = mid - 1;
+            }
+        }
+
+        if (nums[left] == target) {
+            return left;
+        }
+        return -1;
+    }
+
+    // 找最后一个target位置.
+    // 因此找到等于时，不直接返回，而是缩小左侧空间，left=mid.
+    // 继续查找，右侧仍然可能存在 target.
+    private int findLastPosition(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left + 1) / 2;
+            if (nums[mid] > target) {
+                // 下一轮搜索区间是 [left, mid - 1]
+                right = mid - 1;
+            } else if (nums[mid] == target){
+                // 下一轮搜索区间是 [mid, right]
+                left = mid;
+            } else {
+                // nums[mid] < target，下一轮搜索区间是 [mid + 1, right]
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+}
+```
 
 
 
