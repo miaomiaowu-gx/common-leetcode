@@ -26,8 +26,8 @@
  ```
 
 提示：
-* 1 <= nums.length <= 100
-* 0 <= nums[i] <= 100
+* `1 <= nums.length <= 100`
+* `0 <= nums[i] <= 100`
 
 [31. 下一个排列](https://leetcode-cn.com/problems/next-permutation/)
 
