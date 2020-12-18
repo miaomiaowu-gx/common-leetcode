@@ -32,7 +32,7 @@
 
 先转置矩阵，然后反转每一行
 
-
+<img src="./imgarray/04-48-01.png" width=500>
 
 
 
