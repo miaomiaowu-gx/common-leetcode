@@ -44,6 +44,9 @@
 
 * 最后，因为 target 可能不存在数组中，因此需要重新校验得到的两个下标 leftIdx 和 rightIdx，看是否符合条件，如果符合条件就返回 [leftIdx,rightIdx]，不符合就返回 [−1,−1]。
 
+> * 找左侧第一个 target 时，target<=nums[mid]
+> * 找右侧第一个比 target 大的数时，target<nums[mid]
+
 
 ```java
 class Solution {
