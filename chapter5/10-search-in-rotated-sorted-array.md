@@ -20,11 +20,11 @@
 ```
 
 提示：
-* 1 <= nums.length <= 5000
-* -10^4 <= nums[i] <= 10^4
+* `1 <= nums.length <= 5000`
+* `-10^4 <= nums[i] <= 10^4`
 * nums 中的【每个值都独一无二】🍒
 * nums 肯定会在某个点上旋转
-* -10^4 <= target <= 10^4
+* `-10^4 <= target <= 10^4`
 
 [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 
