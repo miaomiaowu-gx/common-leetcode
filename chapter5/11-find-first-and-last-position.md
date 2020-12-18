@@ -84,7 +84,7 @@ class Solution {
 * 空间复杂度：O(1)。只需要常数空间存放若干变量。
 
 
-### 实现 2
+### 二分查找-实现 2
 
 ```java
 class Solution {
