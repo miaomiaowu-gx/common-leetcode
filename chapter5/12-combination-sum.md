@@ -26,10 +26,10 @@
 ``` 
 
 提示：
-* 1 <= candidates.length <= 30
-* 1 <= candidates[i] <= 200
+* `1 <= candidates.length <= 30`
+* `1 <= candidates[i] <= 200`
 * candidate 中的每个元素都是独一无二的。
-* 1 <= target <= 500
+* `1 <= target <= 500`
 
 
 
