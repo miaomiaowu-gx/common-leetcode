@@ -45,7 +45,33 @@
 * 最后，因为 target 可能不存在数组中，因此需要重新校验得到的两个下标 leftIdx 和 rightIdx，看是否符合条件，如果符合条件就返回 [leftIdx,rightIdx]，不符合就返回 [−1,−1]。
 
 
+```java
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int leftIndex = binarySearch(nums, target, true);
+        int rightIndex = binarySearch(nums, target, false)-1;
+        if(leftIndex<=rightIndex && rightIndex<nums.length && nums[leftIndex]==target && nums[rightIndex]==target){
+            return new int[]{leftIndex,rightIndex};
+        }
+        return new int[]{-1,-1};
+    }
 
+    public int binarySearch(int[] nums, int target, boolean lower){
+        int left = 0, right = nums.length-1;
+        while (left<=right){
+            int mid = (left+right)/2;
+            if(target<nums[mid] || (lower && target<=nums[mid])){
+                //找左侧第一个target时，target<=nums[mid]
+                //找右侧第一个比target大的数时，target<nums[mid]
+                right = mid - 1;
+            }else{
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+}
+```
 
 
 
